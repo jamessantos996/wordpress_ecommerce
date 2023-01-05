@@ -1,0 +1,151 @@
+/*
+Theme Name: Divi Child
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Template: Divi
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Version: 4.18.0.1663053987
+Updated: 2022-09-13 07:26:27
+
+*/
+/* Global Header Row */
+#global-header{
+	align-items: center;
+}
+#global-header .logo{
+	margin: 0;
+}
+/* Compare Button */
+.compare-btn{
+	width: 60%;
+	height: 48px;
+	color: #ffffff;
+	padding: 8px 0px;
+	background-image: linear-gradient(to right, #2be5e5, #005162);
+	background-color: #005162;
+	border-radius: 5px;
+	border: 0;
+	margin-top: 5px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	transition: opacity 0.2s ease-in
+}
+.related .compare-btn{
+	width: 100%;
+}
+.compare-btn:hover{
+	opacity: 0.7;
+}
+.single-product-section .compare-btn{
+	width: 225px;
+}
+.shop-section .compare-btn{
+	width: 100%;
+}
+/* Search Button */
+.et_pb_search input.et_pb_searchsubmit{
+	background-color: #005162;
+}
+/* Wishlist Button */
+.wishlist-btn{
+	width: 60%;
+	padding: 8px 0px;
+	border: 2px solid #005162 !important;
+	border-radius: 5px;
+	margin-top: 5px !important;
+	text-align: center;
+	transition: all 0.5s ease-in-out
+}
+.related .wishlist-btn{
+	width: 100%;
+}
+.wishlist-btn:hover{
+	background-color: #005162;
+}
+.wishlist-btn:hover::before{
+	color: #ffffff;
+}
+.wishlist-btn::before{
+	color: #005162;
+}
+.wishlist-btn span{
+	color: #005162;
+	font-size: 14px;
+	font-weight: 600;
+}
+.wishlist-btn:hover span{
+	color: #ffffff;
+}
+.single-product-section .wishlist-btn{
+	width: 225px;
+}
+.single-product-wishlist-btn span{
+	text-decoration: none;
+}
+.shop-section .wishlist-btn{
+	width: 100%;
+}
+/* Product Title */
+.woocommerce-loop-product__title{
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+
+@media only screen and (max-width: 1445px){
+	#global-header .search-bar{
+		display: none;
+	}
+	#global-header .header-menu{
+		flex: 1;
+	}
+	#global-header .header-menu .et_pb_menu__wrap{
+		justify-content: flex-end;
+	}
+}
+@media only screen and (max-width: 560px){
+	ul.products.columns-3{
+		display: flex;
+		flex-direction: column;
+	}
+	.et_pb_shop ul.products.columns-3 li.product{
+		width: 100% !important;
+		margin: 0;
+	}
+	.et-db #et-boc .et-l .et_pb_wc_related_products ul.products.columns-3 li.product{
+		width: 100% !important;
+	}
+	#top-rated-products ul.products.columns-2,
+	#best-selling-products ul.products.columns-2{
+		display: flex;
+		flex-direction: column;
+	}
+	#top-rated-products ul.products.columns-2 li.product,
+	#best-selling-products ul.products.columns-2 li.product{
+		width: 100% !important;
+	}
+}
+@media only screen and (max-width: 574px){
+	.compare-btn{
+		width: 90%;
+	}
+	.wishlist-btn{
+		width: 90%;
+		padding: 8px 0px;
+		border: 2px solid #005162 !important;
+		border-radius: 5px;
+		margin-top: 5px !important;
+		transition: all 0.5s ease-in-out
+	}
+	.products-row ul.products{
+		display: flex;
+		flex-direction: column;
+	}
+	.et-db #et-boc .et-l .et_pb_shop ul.products.columns-4 li.product{
+		width: 100% !important;
+	}
+	
+	
+}
